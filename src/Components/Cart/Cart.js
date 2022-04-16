@@ -7,7 +7,7 @@ const Cart = () => {
   const totalPrice = useSelector(getTotalPrice);
 
   return (<div>
-    <img className="cartIcon" src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-shopping-cart-cyber-monday-xnimrodx-lineal-color-xnimrodx.png"/>
+    <img className="cartIcon" src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-shopping-cart-cyber-monday-xnimrodx-lineal-color-xnimrodx.png" alt="cart"/>
     <h3>Всего: {totalPrice} ₽</h3>
     {cartItems.map(cartItem => <CartItem cartItem={cartItem}/>)}
   </div>);
